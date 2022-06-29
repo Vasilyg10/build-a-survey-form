@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div>
-        <h1 id="title">Vasily Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
-    </div>
-    <div>
-        <form id="survey-form">
-            <fieldset>
-                <label id="name-label"><input placeholder="Enter your name" id="name" type="text" /> Name</label>
-                <label id="email-label"><input placeholder="Enter your email" id="email" required /> Email</label>
-                <label id="number-label"><input placeholder="Age" id="number" type="number" min="" max="" /> Age <small>(optional)</small></label>
-                <label>Which is the best breakfast in the land?
-                    <select id="dropdown">
-                        <option value="">(Select an option)</option>
-                        <option value="cereal">Cereal</option>
-                        <option value="eggsnbacon">Eggs and Bacon</option>
-                        <option value="kayana">Kayana</option>
-                    </select>
-                </label>
-                <label>Would you recommend this breakfast to a friend?
-                    <label><input type="radio" name="recommend"> Yes</label>
-                    <label><input type="radio" name="recommend"> No</label>
-                </label>
-                <label>What would you like to see be added to breakfast?
-                    <label><input value="omelet" type="checkbox"> Omelet</label>
-                    <label><input value="frenchtoast" type="checkbox"> French Toast</label>
-                    <label><input value="pancakes" type="checkbox"> Pancakes</label>
-                </label>
-                <label>Do you have any suggestions?
-                    <textarea name="suggestion" rows="3" cols="30" placeholder="Actually I think..."></textarea>
-                </label>
-            </fieldset>
-            <input type="submit" value="submit">
-        </form>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div>
+			<h1 id="title">Vasily Survey Form</h1>
+			<p id="description">
+				Thank you for taking the time to help us improve the platform
+			</p>
+		</div>
+		<div>
+			<form id="survey-form">
+				<fieldset>
+					<label for="name" id="name-label">Name</label>
+					<input
+						name="name"
+						placeholder="Enter your name"
+						id="name"
+						type="text"
+					/>
+					<label for="email" id="email-label">Email</label>
+					<input
+						name="email"
+						placeholder="Enter your email"
+						id="email"
+						required
+					/>
+					<label for="number" id="number-label"
+						>Age <small>(optional)</small></label
+					>
+					<input
+						name="number"
+						placeholder="Age"
+						id="number"
+						type="number"
+						min="13"
+						max="125"
+					/>
+					<label for="dropdown">Which is the best breakfast in the land?</label>
+					<select name="dropdown" id="dropdown">
+						<option value="">(Select an option)</option>
+						<option value="cereal">Cereal</option>
+						<option value="eggsnbacon">Eggs and Bacon</option>
+						<option value="kayana">Kayana</option>
+					</select>
+					<label
+						>Would you recommend this breakfast to a friend?
+						<label><input type="radio" name="recommend" /> Yes</label>
+						<label><input type="radio" name="recommend" /> No</label>
+					</label>
+					<label
+						>What would you like to see be added to breakfast?
+						<label><input value="omelet" type="checkbox" /> Omelet</label>
+						<label
+							><input value="frenchtoast" type="checkbox" /> French Toast</label
+						>
+						<label><input value="pancakes" type="checkbox" /> Pancakes</label>
+					</label>
+					<label for="suggestion"
+						>Do you have any suggestions?
+                    </label>
+						<textarea
+							name="suggestion"
+							rows="3"
+							cols="30"
+							placeholder="Actually I think..."
+						></textarea>
+				</fieldset>
+				<input type="submit" value="submit" />
+			</form>
+		</div>
+	</body>
 </html>
